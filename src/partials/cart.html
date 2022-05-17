@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <include src="./partials/head.html"></include>
+    <title>Document</title>
+    <link rel="stylesheet" href="../js/slick/slick/slick.css">
+    <link rel="stylesheet" href="../js/slick/slick/slick-theme.css">
+</head>
+
+<body class="preload">
+
+    <include src="./partials/header.html"></include>
+
+
+
+
+
+    <section class="cart section">
+        <div class="container cart__container">
+            <h1 class="section__title cart__title">Корзина</h1>
+
+            <div class="cart__empty is-hidden">
+                <p class="section__message cart__message">Ваша корзина пуста</p>
+                <a class="button cart-empty__button" href="#">Вернуться к покупкам</a>
+            </div>
+
+            <form class="cart__form" action="POST">
+
+                <ul class="product__list">
+                    <li class="product__item" data-id="67">
+
+                        <img class="product__image" src="../images/catalog/item1.png" alt="Фото товара">
+                        <div class="product__content">
+
+                            <p class="product__name">Костюм</p>
+                            <p class="product__description">хлопок 80%, акрил 10%</p>
+                            <div class="product__row">
+                                <span class="product__key">Размер:</span>
+                                <span class="product__value">М</span>
+                            </div>
+                            <div class="product__row">
+                                <span class="product__key">Цвет:</span>
+                                <span class="product__value">синий</span>
+                            </div>
+
+
+                            <div class="product__wrap">
+
+                                <button class="product__favorites" type="button" data-id="86"
+                                    aria-label="Add in favorites">
+                                    <svg class="catalog__icon" width="18" height="18">
+                                        <use class="" href="../images/icons/sprite.svg#icon-favorites"></use>
+                                    </svg>
+                                    <p class="product__comment">В избранное</p>
+                                </button>
+
+                                <p class="product__price">1150</p>
+
+                            </div>
+
+                            <button class="product__delete" type="button">
+                                <p class="product__marker">Удалить</p>
+                                <svg class="product__cross" width="12" height="12">
+                                    <use href="../images/icons/sprite.svg#icon-cross"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </li>
+
+                    <li class="product__item" data-id="45">
+
+                        <img class="product__image" src="../images/catalog/item2.png" alt="Фото товара">
+                        <div class="product__content">
+
+                            <p class="product__name">Костюм</p>
+                            <p class="product__description">хлопок 80%, акрил 10%</p>
+                            <div class="product__row">
+                                <span class="product__key">Размер:</span>
+                                <span class="product__value">М</span>
+                            </div>
+                            <div class="product__row">
+                                <span class="product__key">Цвет:</span>
+                                <span class="product__value">синий</span>
+                            </div>
+
+
+                            <div class="product__wrap">
+
+                                <button class="product__favorites is-favorite" type="button" data-id="86"
+                                    aria-label="Add in favorites">
+                                    <svg class="catalog__icon" width="18" height="18">
+                                        <use class="" href="../images/icons/sprite.svg#icon-favorites"></use>
+                                    </svg>
+                                    <p class="product__comment">В избранное</p>
+                                </button>
+
+                                <p class="product__price">1150</p>
+
+                            </div>
+
+                            <button class="product__delete" type="button">
+                                <p class="product__marker">Удалить</p>
+                                <svg class="product__cross" width="12" height="12">
+                                    <use href="../images/icons/sprite.svg#icon-cross"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </li>
+
+                </ul>
+
+                <p class="cart__text">Добавьте комментарий к заказу</p>
+                <textarea class="cart__comment" name="" id="" rows="10" placeholder="Подарочная упаковка"></textarea>
+
+                <div class="cart__wrap">
+                    <span class="cart__key">Сумма заказа</span>
+                    <span class="cart__value js-total">0</span>
+                </div>
+
+                <div class="cart__row">
+                    <a class="cart__link" href="#">Вернуться к покупкам</a>
+                    <button type="submit" class="cart__button">Оформить заказ</button>
+                </div>
+            </form>
+
+        </div>
+    </section>
+
+    <div class="cart__recent is-hidden">
+        <include src="./partials/recent.html"></include>
+        <include src="./partials/subscribe.html"></include>
+    </div>
+
+
+
+
+
+    <include src="./partials/footer.html"></include>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" crossorigin="anonymous"></script>
+    <script src="/js/header.js"></script>
+    <script src="/js/recent.js"></script>
+    <script src="/js/cart.js"></script>
+
+</body>
+
+</html>

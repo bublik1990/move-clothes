@@ -1,0 +1,65 @@
+.hero {
+  background-image: url('../images/refund-background.png');
+  height: 220px;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__title {
+  font-weight: 400;
+  font-size: 21px;
+  font-family: 'Geometria medium';
+  color: white;
+}
+
+.info {
+  padding-top: 40px;
+  font-family: 'Geometria';
+  font-size: 14px;
+  //   letter-spacing: 0.03em;
+  letter-spacing: 0;
+  line-height: 1.8;
+}
+
+.info__container {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.info__title {
+  font-weight: 600;
+}
+
+.info__list {
+  margin-top: 30px;
+}
+
+.info__item::before {
+  content: '';
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  background-color: #000000;
+  vertical-align: middle;
+  border-radius: 7px;
+  margin-right: 2px;
+}
+
+.info__item:not(:first-child) {
+  margin-top: 20px;
+}
+
+.info__notice {
+  margin-top: 30px;
+  font-weight: 600;
+  font-family: 'Geometria italic';
+}
+
+.info__link {
+  border-bottom: 1px solid;
+  color: #ddb9a4;
+}

@@ -1,0 +1,98 @@
+.product__list {
+  margin-top: 55px;
+}
+
+.product__item {
+  padding: 25px;
+  border: 1px solid #777777;
+  display: flex;
+  align-items: center;
+  position: relative;
+  letter-spacing: 0;
+
+  &:not(:first-child) {
+    margin-top: 35px;
+  }
+}
+
+.product__image {
+  max-width: 100%;
+  width: 45%;
+  min-width: 90px;
+}
+
+.product__content {
+  margin-left: 20px;
+  width: 100%;
+}
+
+.product__name {
+  font-size: 18px;
+  font-family: 'Geometria medium';
+}
+
+.product__description {
+  color: #777777;
+  margin-top: 5px;
+}
+
+.product__row {
+  margin-top: 15px;
+}
+
+.product__key {
+  font-family: 'Geometria medium';
+}
+
+.product__value {
+  color: #777777;
+  font-weight: 600;
+}
+
+.product__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.product__price {
+  font-family: 'Geometria Medium';
+  right: 10px;
+  bottom: 25px;
+
+  &::before {
+    content: '\20B4';
+    font-size: 1.04em;
+  }
+}
+
+.product__favorites,
+.product__delete {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 0;
+}
+
+.product__comment {
+  margin-left: 7px;
+}
+
+.product__favorites.is-favorite .catalog__icon {
+  fill: #ff4700;
+}
+
+.product__delete {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+}
+
+.product__cross {
+  margin-left: 5px;
+}

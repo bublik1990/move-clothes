@@ -1,0 +1,148 @@
+<header class="header">
+    <div class="container header__container">
+
+        <button type="button" class="header__button burger-btn js-open-menuBtn" aria-label="Menu">
+            <svg class="" width="25" height="25">
+                <use class="" href="../images/icons/sprite.svg#icon-burger"></use>
+            </svg>
+        </button>
+
+        <a href="#" class="header__logo">MOVE</a>
+
+        <div class="header__personality">
+
+            <a href="#" type="button" class="header__button" aria-label="Favorites">
+                <svg class="header__icon" width="22" height="22">
+                    <use class="" href="../images/icons/sprite.svg#icon-heart"></use>
+                </svg>
+            </a>
+
+            <a href="#" type="button" class="header__button header__basket" aria-label="Basket">
+                <svg class="header__icon" width="22" height="22">
+                    <use class="" href="../images/icons/sprite.svg#icon-bag"></use>
+                </svg>
+                <span class="basket__count">19</span>
+            </a>
+
+
+        </div>
+    </div>
+
+    <div class="header__menu menu">
+
+        <button class="header__closeBtn js-close-menuBtn" aria-label="Закрить меню">
+            <svg class="header__cross" width="13" height="13">
+                <use class="icon-close" href="../images/icons/sprite.svg#icon-close"></use>
+            </svg>
+
+        </button>
+
+
+        <div class="menu__wrap">
+
+            <a class="menu__phone header__link" href="tel:+380992302257">+38(099) 23 02 257</a>
+
+            <div class="header__internationalization">
+                <button class="current__language language__button">
+                    Укр
+                </button>
+
+                <form class="internationalization__form" action="/i18n/setlang/" method="post">
+                    <ul class="internationalization__list">
+                        <li class="internationalization__item">
+                            <button type="submit" name="language" value="" class="language__button">
+                                <span>
+                                    Рус
+                                </span>
+                            </button>
+                        </li>
+
+                        <li class="internationalization__item">
+                            <button type="submit" name="language" value="" class="language__button">
+                                <span>
+                                    Eng
+                                </span>
+                            </button>
+                        </li>
+                    </ul>
+                </form>
+
+            </div>
+
+        </div>
+        <a class="menu__cabinet header__link" href="#">Личный кабинет</a>
+
+        <ul class="menu__catalog">
+            <li class="menu__category">
+                <p class="menu__element">Новинки
+
+                    <button aria-label="drop menu" type="" class="menu__button">
+                        <i class="menu__arrow"></i>
+                    </button>
+                </p>
+
+                <ul class="menu__subcategory">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Смотреть все</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Кардиганы</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Топы и футболки</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="menu__category">
+                <p class="menu__element">Топы и футболки
+
+                    <button aria-label="drop menu" type="" class="menu__button">
+                        <i class="menu__arrow"></i>
+                    </button>
+                </p>
+
+                <ul class="menu__subcategory">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Смотреть все</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Кардиганы</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Топы и футболки</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="menu__category">
+                <p class="menu__element">Кардиганы
+
+                    <button aria-label="drop menu" type="" class="menu__button">
+                        <i class="menu__arrow"></i>
+                    </button>
+                </p>
+
+                <ul class="menu__subcategory">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Смотреть все</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Кардиганы</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Топы и футболки</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="menu__conditions">
+
+            <a class="menu__payment header__link" href="#">Оплата и доставка</a>
+            <a class="menu__refund header__link" href="#">Обмен и возврат</a>
+        </div>
+
+    </div>
+
+</header>

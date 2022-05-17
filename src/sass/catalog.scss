@@ -1,0 +1,80 @@
+.catalog {
+  padding-top: 40px;
+}
+
+.catalog__title {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+  font-size: 21px;
+  font-family: 'Geometria medium';
+}
+
+.catalog__list {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog__item {
+  width: calc((100% - 20px) / 2);
+  position: relative;
+}
+
+.catalog__item:nth-child(2n) {
+  margin-left: 20px;
+}
+
+.catalog__item:nth-child(n + 3) {
+  margin-top: 40px;
+}
+
+.catalog__image {
+  max-width: 100%;
+}
+
+.catalog__name {
+  margin-top: 15px;
+  color: #777777;
+  font-family: 'Geometria';
+}
+
+.catalog__price {
+  margin-top: 8px;
+  font-family: 'Geometria Medium';
+
+  &::before {
+    content: '\20B4';
+    font-size: 1.04em;
+  }
+}
+
+.catalog__favorites {
+  background-color: white;
+  padding: 0;
+  border: none;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 28px;
+  height: 28px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.catalog__icon {
+  display: block;
+}
+
+.catalog__button {
+  display: block;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.catalog__favorites.is-favorite {
+  fill: #ff4700;
+}

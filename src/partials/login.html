@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <include src="./partials/head.html"></include>
+    <title>Document</title>
+
+</head>
+
+<body class="preload">
+
+    <include src="./partials/header.html"></include>
+
+
+
+
+    <section class="section container login__container">
+        <p class="section__title">Войти</p>
+        <div class="login__links">
+            <button class="login__button login__google">
+                <div class="login__button-wrap">
+                    <img class="login__button-logo" src="../images/icons/google.png" alt="Google logo">
+
+                </div>
+                <p class="login__button-text">Google</p>
+            </button>
+
+            <button class="login__button login__facebook">
+                <div class="login__button-wrap">
+                    <img class="login__button-logo" src="../images/icons/facebook.png" alt="facebook logo">
+
+                </div>
+                <p class="login__button-text">Facebook</p>
+            </button>
+
+        </div>
+
+        <button class="login__button login__phone">
+
+            <p class="login__button-text">Телефон</p>
+        </button>
+
+        <p class="login__separator">или</p>
+
+        <form class="login__form" method="post" id="login__form" novalidate>
+
+
+            <label for="" class="login__element">
+                <p class="login__label">E-mail:</p>
+                <ul class="errors"></ul>
+                <input class="login__input">
+            </label>
+
+            <label for="" class="login__element">
+                <p class="login__label">Пароль:</p>
+                <ul class="errors"></ul>
+                <input class="login__input" type="password">
+            </label>
+
+            <a class="login__help" href="#">Забыли пароль?</a>
+
+            <button class="button login__submit" type="submit">Войти</button>
+        </form>
+
+    </section>
+
+    <include src="./partials/footer.html"></include>
+
+    <script src="/js/header.js"></script>
+    <script src="/js/login.js"></script>
+</body>
+
+</html>

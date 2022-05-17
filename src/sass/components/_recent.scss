@@ -1,0 +1,70 @@
+.recent {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.recent__container {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.recent__title {
+  text-transform: uppercase;
+  font-size: 19px;
+  font-family: 'Geometria medium';
+}
+
+.recent__wrap {
+  margin-top: 40px;
+  position: relative;
+}
+
+.recent__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0;
+  //   width: 26px;
+  height: 100%;
+  border: none;
+  z-index: 1;
+  background-color: #ffffff;
+  width: 25%;
+}
+
+.recent__previos {
+  left: 0;
+  padding-left: 8px;
+}
+
+.recent__next {
+  right: 0;
+  padding-right: 8px;
+}
+
+.recent__arrow {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+}
+
+.arrow__left {
+  transform: rotate(135deg);
+}
+
+.arrow__right {
+  transform: rotate(-45deg);
+  margin-left: auto;
+}
+
+.recent__list {
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.recent__image {
+  max-width: 100%;
+}

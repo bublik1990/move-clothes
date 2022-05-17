@@ -1,0 +1,172 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-style: normal;
+  // font-family: 'Montserrat', sans-serif;
+  font-family: 'Geometria', sans-serif;
+  position: relative;
+  min-height: 100vh;
+  letter-spacing: 0;
+  // font-size: 15px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+input {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+// section {
+//   padding-top: 0px;
+//   padding-bottom: 40px;
+//   margin-right: auto;
+//   margin-left: auto;
+// }
+// @media screen and (min-width: 768px) {
+//   section {
+//     padding-top: 40px;
+//     padding-bottom: 60px;
+//   }
+// }
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+  }
+}
+// @media screen and (min-width: 480px) {
+//   .container {
+//     max-width: 480px;
+//   }
+// }
+// @media screen and (min-width: 768px) {
+//   .container {
+//     max-width: 768px;
+//   }
+// }
+// @media screen and (min-width: 1024px) {
+//   .container {
+//     max-width: 1024px;
+//   }
+// }
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.preload * {
+  transition: none !important;
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src: url('../../fonts/Geometria.ttf');
+}
+
+@font-face {
+  font-family: 'Geometria medium';
+  src: url('../../fonts/Geometria-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Geometria italic';
+  src: url('../../fonts/Geometria-Italic.ttf');
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  height: 56px;
+  padding: 0 30px;
+  border: none;
+  border-radius: 35px;
+  font-size: 13px;
+  background-color: #333333;
+  color: white;
+  text-transform: uppercase;
+  min-width: 180px;
+  justify-content: center;
+  transition: 250ms;
+
+  &:focus,
+  &:hover {
+    background-color: #535151;
+  }
+}
+
+.section {
+  padding-top: 60px;
+}
+
+.section__title {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 23px;
+  font-weight: 500;
+  font-family: 'Geometria medium';
+}
+
+.section__message {
+  text-transform: uppercase;
+  font-family: 'Geometria';
+  font-size: 23px;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.error-message {
+  display: none;
+  margin-top: 5px;
+  color: #c71a14;
+}

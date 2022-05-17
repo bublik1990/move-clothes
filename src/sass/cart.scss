@@ -1,0 +1,98 @@
+.cart {
+  padding-bottom: 100px;
+}
+
+.cart__container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.cart__empty {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.cart-empty__button {
+  margin-top: 30px;
+}
+
+.cart__text {
+  margin-top: 50px;
+  letter-spacing: 0;
+  font-family: 'Geometria medium';
+}
+
+.cart__comment {
+  margin-top: 20px;
+  width: 100%;
+  height: 117px;
+  border: 1px solid #777777;
+  padding: 18px;
+  font-family: 'Geometria';
+  resize: none;
+}
+
+.cart__wrap {
+  margin-top: 35px;
+  font-family: 'Geometria medium';
+  letter-spacing: 0;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.cart__value {
+  font-size: 20px;
+  font-weight: 600;
+
+  &::before {
+    content: '\20B4';
+    font-size: 1.04em;
+  }
+}
+
+.cart__row {
+  margin-top: 70px;
+  font-family: 'Geometria';
+  letter-spacing: -0.03em;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.cart__link {
+  border-bottom: 1px solid black;
+}
+
+.cart__button {
+  text-transform: uppercase;
+  font-family: 'Geometria';
+  font-weight: 600;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.cart__empty.is-hidden {
+  display: none;
+}
+
+.cart__form.is-hidden {
+  display: none;
+}
+
+.cart__recent.is-hidden {
+  position: absolute;
+  visibility: hidden;
+}
+
+.cart__recent .recent {
+  padding-top: 0;
+}

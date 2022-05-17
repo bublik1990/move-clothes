@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <include src="./partials/head.html"></include>
+    <title>Document</title>
+    <link rel="stylesheet" href="../js/slick/slick/slick.css">
+    <link rel="stylesheet" href="../js/slick/slick/slick-theme.css">
+</head>
+
+<body class="preload">
+    <include src="./partials/header.html"></include>
+
+    <section class="favorites section">
+        <div class="container">
+            <h1 class="section__title favorites__title">Избранное</h1>
+
+            <!-- if there are no positions in favorites this block is shown. else - add class "is-hidden"-->
+            <div class="favorites__empty is-hidden">
+                <p class="section__message favorites__message">Нет избранных товаров</p>
+                <p class="favorites__submessage">Чтобы сохранить товар в Избранное,
+                    нажмите иконку в карточке товара</p>
+                <a class="button favorites__button" href="#">Вернуться к покупкам</a>
+            </div>
+
+
+            <!-- if there are no positions in favorites list add class "is-hidden"-->
+            <ul class="product__list favorites__list">
+                <li class="product__item" data-id="67">
+
+                    <img class="product__image" src="../images/catalog/item1.png" alt="Фото товара">
+                    <div class="product__content">
+
+                        <p class="product__name">Костюм</p>
+                        <p class="product__description">хлопок 80%, акрил 10%</p>
+                        <div class="product__row">
+                            <span class="product__key">Размер:</span>
+                            <span class="product__value">М</span>
+                        </div>
+                        <div class="product__row">
+                            <span class="product__key">Цвет:</span>
+                            <span class="product__value">синий</span>
+                        </div>
+
+
+                        <div class="product__wrap">
+
+
+                            <p class="product__price">1150</p>
+
+                        </div>
+
+                        <button class="product__delete" type="button">
+                            <p class="product__marker">Удалить</p>
+                            <svg class="product__cross" width="12" height="12">
+                                <use href="../images/icons/sprite.svg#icon-cross"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </li>
+
+                <li class="product__item" data-id="45">
+
+                    <img class="product__image" src="../images/catalog/item2.png" alt="Фото товара">
+                    <div class="product__content">
+
+                        <p class="product__name">Костюм</p>
+                        <p class="product__description">хлопок 80%, акрил 10%</p>
+                        <div class="product__row">
+                            <span class="product__key">Размер:</span>
+                            <span class="product__value">М</span>
+                        </div>
+                        <div class="product__row">
+                            <span class="product__key">Цвет:</span>
+                            <span class="product__value">синий</span>
+                        </div>
+
+
+                        <div class="product__wrap">
+
+                            <p class="product__price">1150</p>
+
+                        </div>
+
+                        <button class="product__delete" type="button">
+                            <p class="product__marker">Удалить</p>
+                            <svg class="product__cross" width="12" height="12">
+                                <use href="../images/icons/sprite.svg#icon-cross"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </section>
+
+
+    <include src="./partials/recent.html"></include>
+    <include src="./partials/subscribe.html"></include>
+
+
+    <include src="./partials/footer.html"></include>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" crossorigin="anonymous"></script>
+    <script src="/js/header.js"></script>
+    <script src="/js/recent.js"></script>
+    <script src="/js/favorites.js"></script>
+</body>
+
+</html>

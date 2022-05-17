@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <include src="./partials/head.html"></include>
+    <title>Document</title>
+    <link rel="stylesheet" href="../js/slick/slick/slick.css">
+    <link rel="stylesheet" href="../js/slick/slick/slick-theme.css">
+</head>
+
+<body class="preload">
+    <include src="./partials/header.html"></include>
+
+    <section class="card">
+        <div class="notification visually-hidden js-success-message">
+            <div class="container">
+                <div class="notification__container">
+                    <svg class="notification__icon" width="30" height="30">
+                        <use href="../images/icons/sprite.svg#icon-check"></use>
+                    </svg>
+                    <p class="notification__text">
+
+                        Ваш товар успешно добавлен
+                        <a href="#">в корзину</a>
+                    </p>
+                    <svg class="notification__close js-notification-close" width="20" height="20">
+                        <use href="../images/icons/sprite.svg#icon-cross"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <form action="">
+
+
+
+            <div class="container card__container">
+                <ul class="card__gallery gallery">
+                    <li class="gallery__item">
+                        <img class="gallery__photo" src="../images/catalog/item2.png" alt="Фото товара">
+                    </li>
+
+                    <li class="gallery__item">
+                        <img class="gallery__photo" src="../images/catalog/item4.png" alt="Фото товара">
+                    </li>
+
+                    <li class="gallery__item">
+                        <img class="gallery__photo" src="../images/catalog/item6.png" alt="Фото товара">
+                    </li>
+
+                    <li class="gallery__item">
+                        <img class="gallery__photo" src="../images/catalog/item7.png" alt="Фото товара">
+                    </li>
+
+                    <li class="gallery__item">
+                        <img class="gallery__photo" src="../images/catalog/item8.png" alt="Фото товара">
+                    </li>
+
+                </ul>
+
+                <!-- <button class="gallery__button gallery__previos" type="button" aria-label="Влево"></button>
+            <button class="gallery__button gallery__next" type="button" aria-label="Вправо"></button> -->
+
+                <button class="product__order js-add-product-btn" type="submit">Купить</button>
+            </div>
+
+            <div class="container product__content">
+
+                <div class="product__wrap">
+                    <p class="product__name">Платье</p>
+                    <p class="product__price">1180</p>
+                </div>
+
+
+                <div class="color product__section">
+
+                    <p class="product__subtitle">Цвет</p>
+
+                    <ul class="product__palette">
+
+                        <li class="color__field">
+                            <label class="color__label">
+                                <input class="color__input" type="radio" name="color-set" value="#cadfff" checked>
+                                <span class="color__icon" style="background-color: #cadfff;"></span>
+                            </label>
+                        </li>
+
+                        <li class="color__field">
+                            <label class="color__label">
+                                <input class="color__input" type="radio" name="color-set" value="#e9cbb7">
+                                <span class="color__icon" style="background-color: #e9cbb7;"></span>
+                            </label>
+                        </li>
+
+                        <li class="color__field">
+                            <label class="color__label">
+                                <input class="color__input" type="radio" name="color-set" value="#9e9e9e">
+                                <span class="color__icon" style="background-color: #9e9e9e;"></span>
+                            </label>
+                        </li>
+
+                        <li class="color__field">
+                            <label class="color__label">
+                                <input class="color__input" type="radio" name="color-set" value="#b3e8ff">
+                                <span class="color__icon" style="background-color: #b3e8ff;"></span>
+                            </label>
+                        </li>
+
+                        <li class="color__field">
+                            <label class="color__label">
+                                <input class="color__input" type="radio" name="color-set" value="#eca6a3">
+                                <span class="color__icon" style="background-color: #eca6a3;"></span>
+                            </label>
+                        </li>
+
+                        <li class="color__field">
+                            <label class="color__label">
+                                <input class="color__input" type="radio" name="color-set" value="#c71a14">
+                                <span class="color__icon" style="background-color: #c71a14;"></span>
+                            </label>
+                        </li>
+
+                        <li class="color__field">
+                            <label class="color__label">
+                                <input class="color__input" type="radio" name="color-set" value="#ffffff">
+                                <span class="color__icon" style="background-color: #ffffff;"></span>
+                            </label>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+                <div class="size product__section">
+
+                    <p class="product__subtitle">Размер</p>
+
+                    <ul class="product__size">
+
+                        <li class="size__field">
+                            <label class="size__label">
+                                <input class="size__input" type="radio" name="size-set" value="S" checked>
+                                <span class="size__name">S</span>
+
+                            </label>
+                        </li>
+
+                        <li class="size__field">
+                            <label class="size__label">
+                                <input class="size__input" type="radio" name="size-set" value="M" checked>
+                                <span class="size__name">M</span>
+                            </label>
+                        </li>
+
+                        <li class="size__field">
+                            <label class="size__label">
+                                <input class="size__input" type="radio" name="size-set" value="XS" checked>
+                                <span class="size__name">XS</span>
+                            </label>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+            </div>
+
+        </form>
+
+        <div class="container">
+
+            <a class="card__help" href="#">Помощь с выбором размера</a>
+            <p class="card__comment">Напишите нам в директ и наш консультант
+                поможет вам с выбором размера</p>
+
+            <ul class="info">
+
+                <li class="info__item">
+                    <button class="info__title js-content-btn" type="button">Состав</button>
+                    <p class="info__consist info__content">шерсть 50%, акрил 40%, мохер 10%</p>
+                </li>
+
+                <li class="info__item">
+                    <button class="info__title js-content-btn" type="button">Уход</button>
+                    <ul class="info__care info__content">
+                        <li class="info__part">
+                            Стирать в режиме ручной либо деликатной
+                            стирки при температуре не выше 30°C
+                        </li>
+
+                        <li class="info__part">
+                            Рекомендуем использовать мешочек для стирки
+                        </li>
+
+                        <li class="info__part">
+                            Сушить на плоской поверхности
+                        </li>
+
+                        <li class="info__part">
+                            Гладить паром
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="help">
+                <li class="help__item"><a class="help__link" href="#">Как снять мерки</a></li>
+                <li class="help__item"><a class="help__link" href="#">Таблица размеров</a></li>
+            </ul>
+        </div>
+
+
+
+
+
+
+
+    </section>
+
+    <include src="./partials/recent.html"></include>
+    <include src="./partials/subscribe.html"></include>
+
+    <include src="./partials/footer.html"></include>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" crossorigin="anonymous"></script>
+    <script src="/js/header.js"></script>
+    <script src="/js/recent.js"></script>
+    <script src="/js/product.js"></script>
+
+</body>
+
+</html>

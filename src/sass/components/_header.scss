@@ -1,0 +1,255 @@
+.header {
+  height: 80px;
+  box-shadow: 1px 1px 13px 0px #00000047;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  height: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  @media screen and (min-width: 380px) {
+    justify-content: center;
+  }
+}
+
+.header__button {
+  padding: 0;
+  border: 0;
+  background: none;
+}
+
+.header__logo {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+.header__personality .header__button:not(:first-child) {
+  margin-left: 17px;
+}
+
+.burger-btn {
+  @media screen and (min-width: 380px) {
+    position: absolute;
+    left: 30px;
+  }
+}
+
+.header__personality {
+  @media screen and (min-width: 380px) {
+    position: absolute;
+    right: 30px;
+  }
+}
+
+.header__menu {
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  padding: 50px 33px;
+  text-transform: uppercase;
+  font-size: 13px;
+  box-shadow: 1px 1px 13px 0px #00000047;
+  overflow: auto;
+  visibility: hidden;
+  transform: translateX(-100%);
+  transition: 250ms linear;
+  width: 100%;
+  max-width: 340px;
+  z-index: 5;
+}
+
+.header__menu.is-open {
+  display: flex;
+  flex-direction: column;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+.header__closeBtn {
+  padding: 5px;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.header__cross {
+  display: block;
+}
+
+.menu__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__link {
+  display: block;
+  color: inherit;
+  font-weight: 700;
+  font-size: 14px;
+
+  &:focus,
+  &:hover {
+    color: #4a4a4a;
+  }
+}
+
+.header__internationalization {
+  margin-left: 30px;
+  position: relative;
+}
+
+.internationalization__form {
+  position: absolute;
+  top: calc(100% + 7px);
+  opacity: 0;
+  transition: opacity 250ms linear;
+  pointer-events: none;
+}
+
+.header__internationalization.is-open .internationalization__form {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.language__button {
+  background-color: transparent;
+  text-transform: uppercase;
+  padding: 4px 0;
+  border: 0;
+  font-weight: 700;
+}
+
+.menu__phone,
+.menu__cabinet {
+  display: flex;
+  align-items: center;
+}
+
+.menu__phone::before,
+.menu__cabinet::before {
+  content: '';
+  display: block;
+  width: 17px;
+  height: 17px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 10px;
+}
+
+.menu__phone::before {
+  background-image: url('../../images/icons/phone.svg');
+}
+
+.menu__cabinet::before {
+  background-image: url('../../images/icons/user.svg');
+}
+
+.menu__cabinet {
+  margin-top: 70px;
+  text-decoration: underline;
+}
+
+.menu__catalog {
+  margin-top: 30px;
+  font-weight: 600;
+  flex: 1 0 auto;
+}
+
+.menu__category {
+  border-bottom: 1px solid #8b8b8b;
+}
+
+.menu__element {
+  padding: 25px 0;
+  position: relative;
+  padding-right: 50px;
+  cursor: pointer;
+
+  &:focus,
+  &:hover {
+    color: #4a4a4a;
+  }
+}
+
+.menu__button {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  border: none;
+  background-color: transparent;
+  transition: 250ms linear;
+}
+
+.menu__arrow {
+  width: 8px;
+  height: 8px;
+  transform: rotate(-45deg);
+  display: block;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+}
+
+.menu__subcategory {
+  // display: none;
+  padding-left: 20px;
+  padding-bottom: 12px;
+  margin-top: 5px;
+  color: #8b8b8b;
+  visibility: hidden;
+  transform: translateY(-100%);
+  // transition: 250ms linear;
+  position: absolute;
+}
+
+.menu__category.is-open .menu__subcategory {
+  visibility: visible;
+  transform: translateY(0);
+  position: relative;
+}
+
+.menu__category.is-open .menu__arrow {
+  transform: rotate(45deg);
+}
+
+.menu__link {
+  padding: 10px 0;
+  display: block;
+  color: inherit;
+
+  &:focus,
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.menu__conditions {
+  flex: 0 0 auto;
+  margin-top: 50px;
+}
+
+.menu__conditions .header__link:not(:first-child) {
+  margin-top: 20px;
+}
+
+.header__basket {
+  position: relative;
+}
+
+.basket__count {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  font-size: 11px;
+}
