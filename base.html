@@ -23,7 +23,14 @@
 
   {% compress css %}
 
+  import '../sass/utils/_variables.scss';
+  import '../sass/base/_reset.scss';
+  import '../sass/components/_header.scss';
+
   {% block styles %}{% endblock %}
+
+  import '../sass/components/_ask.scss';
+  import '../sass/components/_footer.scss';
 
   {% endcompress %}
 
