@@ -29,7 +29,9 @@ function openContent(e) {
 
 function addProductToCart(e) {
   e.preventDefault();
+
   showNotificationMessage(); // delete this line
+
   $.ajax({
     type: 'POST',
     data: $(this).serialize(),
