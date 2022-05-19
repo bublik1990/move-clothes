@@ -11,10 +11,13 @@ const favorites = document.querySelectorAll('.catalog__favorites');
 const showMoreBtn = document.querySelector('.is-show-more');
 const catalogListEl = document.querySelector('.catalog__list');
 showMoreBtn.addEventListener('click', showMoreProduction);
+catalogListEl.addEventListener('click', handleClick);
 
-favorites.forEach(el => {
-  el.addEventListener('click', addToFavorites.bind(el));
-});
+function handleClick(e) {
+  const target = e.target;
+  if (target.nodeName !== 'BUTTON') return;
+  addToFavorites.apply(target);
+}
 
 function showMoreProduction(e) {
   e.preventDefault();
@@ -64,9 +67,6 @@ function generateMarkup(arr) {
                         <p class="catalog__price">${el.price}</p>
                     </a>
                     <button class="catalog__favorites" type="button" data-id="${el.id}" aria-label="Add in favorites">
-                        <svg class="catalog__icon" width="17" height="17">
-                            <use class="" href="../images/icons/sprite.svg#icon-favorites"></use>
-                        </svg>
                     </button>
                 </li>`
     );

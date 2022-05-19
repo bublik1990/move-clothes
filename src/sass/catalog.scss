@@ -50,18 +50,31 @@
 }
 
 .catalog__favorites {
-  background-color: white;
+  // background-color: white;
+  // padding: 0;
+  // border: none;
+  // position: absolute;
+  // top: 5px;
+  // right: 5px;
+  // width: 28px;
+  // height: 28px;
+  // border-radius: 20px;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
   padding: 0;
   border: none;
   position: absolute;
-  top: 5px;
-  right: 5px;
-  width: 28px;
-  height: 28px;
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  top: 8px;
+  right: 8px;
+  fill: #ffffff;
+  background-image: url('../images/icons/heart-empty.svg');
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .catalog__icon {
@@ -75,6 +88,10 @@
   margin-right: auto;
 }
 
+.heart-full {
+  display: none;
+}
+
 .catalog__favorites.is-favorite {
-  fill: #ff4700;
+  background-image: url('../images/icons/heart-full.svg');
 }
