@@ -1,6 +1,10 @@
 .header {
   height: 80px;
   box-shadow: 1px 1px 13px 0px #00000047;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff;
 }
 
 .header__container {
