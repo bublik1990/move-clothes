@@ -201,6 +201,8 @@
   transform: translateY(-50%);
   border: none;
   background-color: transparent;
+  -webkit-user-select: none;
+  user-select: none;
   // transition: 250ms linear;
 }
 
@@ -269,4 +271,6 @@
   transform: translateX(-50%);
   bottom: 2px;
   font-size: 11px;
+  -webkit-user-select: none;
+  user-select: none;
 }
