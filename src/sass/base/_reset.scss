@@ -125,6 +125,11 @@ button {
   src: url('../../fonts/Geometria-Italic.ttf');
 }
 
+@font-face {
+  font-family: 'Geometria extralight';
+  src: url('../../fonts/Geometria-ExtraLight.ttf');
+}
+
 .button {
   display: inline-flex;
   align-items: center;

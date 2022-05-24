@@ -60,7 +60,7 @@
   top: 8px;
   right: 8px;
   fill: #ffffff;
-  background-image: url('../images/icons/heart-empty.svg');
+  background-image: url('../../images/icons/heart-empty.svg');
   background-size: 16px 16px;
   background-repeat: no-repeat;
   background-position: center;
@@ -82,5 +82,5 @@
 }
 
 .catalog__favorites.is-favorite {
-  background-image: url('../images/icons/heart-full.svg');
+  background-image: url('../../images/icons/heart-full.svg');
 }
