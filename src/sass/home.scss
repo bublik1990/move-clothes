@@ -125,4 +125,16 @@ body {
   font-size: 13px;
   letter-spacing: 0.06em;
   font-family: 'Geometria medium';
+
+  &:hover .category__text,
+  &:focus .category__text {
+    border-color: #000000;
+  }
+}
+
+.category__text {
+  transition: 250ms;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: transparent;
 }
