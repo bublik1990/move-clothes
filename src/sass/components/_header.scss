@@ -22,6 +22,10 @@
   // }
 }
 
+.header__container > * {
+  width: calc(100% / 3);
+}
+
 .header__button {
   padding: 0;
   border: 0;
@@ -30,14 +34,27 @@
   fill: inherit;
 }
 
+.header__button svg {
+  display: block;
+}
+
 .header__logo {
   font-size: 30px;
   text-transform: uppercase;
   color: inherit;
+  text-align: center;
+}
+
+.header__personality {
+  text-align: right;
 }
 
 .header__personality .header__button:not(:first-child) {
-  margin-left: 15px;
+  margin-left: 10px;
+
+  @media screen and (min-width: 340px) {
+    margin-left: 15px;
+  }
 }
 
 .header__menu {
@@ -178,10 +195,11 @@
   position: absolute;
   top: 50%;
   right: 0;
+  padding: 5px;
   transform: translateY(-50%);
   border: none;
   background-color: transparent;
-  transition: 250ms linear;
+  // transition: 250ms linear;
 }
 
 .menu__arrow {
@@ -215,6 +233,10 @@
   transform: rotate(45deg);
 }
 
+.menu__category.is-open .menu__button {
+  padding: 5px 5px 9px 5px;
+}
+
 .menu__link {
   padding: 10px 0;
   display: block;
@@ -242,8 +264,7 @@
 .basket__count {
   position: absolute;
   left: 50%;
-  transform: translate(-50%, -50%);
-  top: 50%;
+  transform: translateX(-50%);
+  bottom: 2px;
   font-size: 11px;
-  padding-top: 1px;
 }

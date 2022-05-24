@@ -16,6 +16,7 @@ body {
   min-height: 100vh;
   letter-spacing: 0;
   padding-top: 80px;
+  color: #000000;
   // font-size: 15px;
 }
 
@@ -57,6 +58,7 @@ input {
 
 button {
   cursor: pointer;
+  color: inherit;
 }
 
 // section {
