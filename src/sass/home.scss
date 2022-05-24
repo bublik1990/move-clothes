@@ -7,16 +7,28 @@ body {
   box-shadow: none;
 }
 
-.header__button {
-  fill: #ffffff;
+// .header__button {
+//   fill: #ffffff;
+// }
+
+// .basket__count {
+//   color: #ffffff;
+// }
+
+.header__container {
+  color: #fff;
+  fill: #fff;
+  transition: 1000ms;
 }
 
-.basket__count {
-  color: #ffffff;
+.header__container.reversed {
+  color: #000000;
+  fill: #000000;
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: 1px 1px 13px 0px #00000047;
 }
 
 .header__logo {
-  color: #ffffff;
   font-family: 'Geometria extralight';
 }
 

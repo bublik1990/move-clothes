@@ -27,6 +27,7 @@
   border: 0;
   background: none;
   display: inline-block;
+  fill: inherit;
 }
 
 .header__logo {
@@ -38,20 +39,6 @@
 .header__personality .header__button:not(:first-child) {
   margin-left: 15px;
 }
-
-// .burger-btn {
-//   @media screen and (min-width: 380px) {
-//     position: absolute;
-//     left: 30px;
-//   }
-// }
-
-// .header__personality {
-//   @media screen and (min-width: 380px) {
-//     position: absolute;
-//     right: 30px;
-//   }
-// }
 
 .header__menu {
   background-color: #ffffff;
