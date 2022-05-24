@@ -46,7 +46,9 @@
 }
 
 .header__personality {
-  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .header__personality .header__button:not(:first-child) {
