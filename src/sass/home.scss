@@ -21,11 +21,14 @@ body {
   transition: 1000ms;
 }
 
-.header__container.reversed {
+.header.reversed {
+  box-shadow: 1px 1px 13px 0px #00000047;
+}
+
+.header.reversed .header__container {
   color: #000000;
   fill: #000000;
   background-color: rgba(255, 255, 255, 0.85);
-  box-shadow: 1px 1px 13px 0px #00000047;
 }
 
 .header__logo {

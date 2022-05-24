@@ -8,7 +8,7 @@ import '../sass/components/_footer.scss';
 import '../sass/home.scss';
 
 const categorySectionEl = document.querySelector('.hero');
-const menu = document.querySelector('.header__container');
+const menu = document.querySelector('.header');
 
 document.addEventListener('scroll', reverseMenu);
 
