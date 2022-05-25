@@ -11,8 +11,10 @@ const openContentBtnRefs = document.querySelectorAll('.js-content-btn');
 const addProductToCartBtn = document.querySelector('.js-add-product-btn');
 const successMessageEl = document.querySelector('.js-success-message');
 const closeNotificationMessageBtn = document.querySelector('.js-notification-close');
+const colorsRefs = document.querySelectorAll('.color__label');
 
 openContentBtnRefs.forEach(el => el.addEventListener('click', openContent));
+colorsRefs.forEach(el => el.addEventListener('click', changePhotoByColorBtn));
 addProductToCartBtn.addEventListener('click', addProductToCart);
 
 $('.card__gallery').slick({
@@ -54,4 +56,17 @@ function showNotificationMessage() {
 function closeNotificationMessage() {
   successMessageEl.classList.add('visually-hidden');
   closeNotificationMessageBtn.removeEventListener('click', closeNotificationMessage);
+}
+
+function changePhotoByColorBtn(e) {
+  e.preventDefault();
+  const colorId = this.id;
+
+  if (!colorId) return;
+
+  const slide = document.querySelector(`.gallery__item[data-id="${colorId}"]`);
+  if (!slide) return;
+
+  const index = [...document.querySelectorAll('.gallery__item')].indexOf(slide);
+  $('.card__gallery').slick('slickGoTo', index);
 }
