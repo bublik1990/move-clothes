@@ -132,6 +132,16 @@ button {
   src: url('../../fonts/Geometria-ExtraLight.ttf');
 }
 
+@font-face {
+  font-family: 'Geometria bold';
+  src: url('../../fonts/Geometria-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Geometria light';
+  src: url('../../fonts/Geometria-Light.ttf');
+}
+
 .button {
   display: inline-flex;
   align-items: center;
