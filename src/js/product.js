@@ -59,7 +59,7 @@ function closeNotificationMessage() {
 }
 
 function changePhotoByColorBtn(e) {
-  e.preventDefault();
+  // e.preventDefault();
   const colorId = this.id;
 
   if (!colorId) return;
