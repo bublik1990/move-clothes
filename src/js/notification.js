@@ -1,30 +1,27 @@
 const refs = {
-  successBtn: document.querySelector('.success'),
-  errorBtn: document.querySelector('.error'),
   backdropRef: document.querySelector('.backdrop'),
   notificationCloseBtn: document.querySelector('.js-notification-close'),
+  notificationText: document.querySelector('.js-notification__text'),
 };
-
-refs.successBtn.addEventListener('click', openNotificationWithSuccess);
-refs.errorBtn.addEventListener('click', openNotificationWithError);
 
 let isNotificationMessageOpen = false;
 
-function openNotificationWithSuccess() {
+function openNotificationWithSuccess(string) {
   refs.backdropRef.classList.add('notification-success');
   refs.backdropRef.classList.remove('notification-error');
-  openNotificationMessage();
+  openNotificationMessage(string);
   closeNotificationMessage();
 }
 
-function openNotificationWithError() {
+function openNotificationWithError(string) {
   refs.backdropRef.classList.add('notification-error');
   refs.backdropRef.classList.remove('notification-success');
-  openNotificationMessage();
+  openNotificationMessage(string);
   closeNotificationMessage();
 }
 
-function openNotificationMessage() {
+function openNotificationMessage(string) {
+  refs.notificationText.textContent = string;
   refs.backdropRef.classList.remove('is-hidden');
   refs.notificationCloseBtn.addEventListener('click', closeNotificationMessageByCloseBtn);
   isNotificationMessageOpen = true;

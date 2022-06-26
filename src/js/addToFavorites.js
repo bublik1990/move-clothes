@@ -12,7 +12,7 @@ export function addToFavorites() {
     },
     error: function (response) {
       console.log('error');
-      openNotificationWithError();
+      openNotificationWithError('Какой-то текстggh');
     },
   });
 }
