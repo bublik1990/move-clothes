@@ -15,6 +15,6 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"CplH":[function(require,module,exports) {
 
 },{}],"IUH9":[function(require,module,exports) {
-"use strict";require("../sass/base/_reset.scss"),require("../sass/utils/_variables.scss"),require("../sass/components/_header.scss"),require("../sass/components/_recent.scss"),require("../sass/components/_subscribe.scss"),require("../sass/components/_new.scss"),require("../sass/components/_notification.scss"),require("../sass/components/_footer.scss");
-},{"../sass/base/_reset.scss":"jUof","../sass/utils/_variables.scss":"6mSg","../sass/components/_header.scss":"48ty","../sass/components/_recent.scss":"6mSg","../sass/components/_subscribe.scss":"6mSg","../sass/components/_new.scss":"/WB1","../sass/components/_notification.scss":"6mSg","../sass/components/_footer.scss":"6mSg"}]},{},["IUH9"], null)
-//# sourceMappingURL=/move-clothes/catalog.fecebab9.js.map
+"use strict";require("../sass/base/_reset.scss"),require("../sass/utils/_variables.scss"),require("../sass/components/_header.scss"),require("../sass/components/_recent.scss"),require("../sass/components/_subscribe.scss"),require("../sass/components/_new.scss"),require("../sass/components/_notification.scss"),require("../sass/components/_loader.scss"),require("../sass/components/_footer.scss");
+},{"../sass/base/_reset.scss":"jUof","../sass/utils/_variables.scss":"6mSg","../sass/components/_header.scss":"48ty","../sass/components/_recent.scss":"6mSg","../sass/components/_subscribe.scss":"6mSg","../sass/components/_new.scss":"/WB1","../sass/components/_notification.scss":"6mSg","../sass/components/_loader.scss":"6mSg","../sass/components/_footer.scss":"6mSg"}]},{},["IUH9"], null)
+//# sourceMappingURL=/move-clothes/catalog.936928f4.js.map
