@@ -6,4 +6,5 @@ import '../sass/components/_subscribe.scss';
 // import '../sass/catalog.scss';
 import '../sass/components/_new.scss';
 import '../sass/components/_notification.scss';
+import '../sass/components/_loader.scss';
 import '../sass/components/_footer.scss';
