@@ -1,4 +1,4 @@
-import '../sass/base/_reset.scss';
+import '../sass/base/_reset.scss'; // DELETE THIS LINE, RESET.SCSS IS ALREDY CONNECTED IN BASE TEMPLATE
 import '../sass/components/_modal.scss';
 
 // animations do not work at first loading page
