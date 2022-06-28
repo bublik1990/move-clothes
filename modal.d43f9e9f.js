@@ -5,4 +5,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"RSqK":[function(require,module,exports) {
 "use strict";require("../sass/base/_reset.scss"),require("../sass/components/_modal.scss"),window.addEventListener("load",e=>{document.querySelector("body").classList.remove("preload")});const e={buttonRef:document.querySelector(".js-openModalBtn"),backdropRef:document.querySelector(".backdrop"),closeBtnRef:document.querySelector(".modal__close")};function t(){e.backdropRef.classList.remove("is-hidden"),window.addEventListener("keydown",o),e.closeBtnRef.addEventListener("click",n),e.backdropRef.addEventListener("click",s)}function n(){e.backdropRef.classList.add("is-hidden"),window.removeEventListener("keydown",o),e.closeBtnRef.removeEventListener("click",n)}function o(e){"Escape"===e.code&&n()}function s(e){e.currentTarget===e.target&&n()}e.buttonRef.addEventListener("click",t),e.closeBtnRef.addEventListener("click",n);
 },{"../sass/base/_reset.scss":"jUof","../sass/components/_modal.scss":"sgjk"}]},{},["RSqK"], null)
-//# sourceMappingURL=/move-clothes/modal.16917e55.js.map
+//# sourceMappingURL=/move-clothes/modal.d43f9e9f.js.map
